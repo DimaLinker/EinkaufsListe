@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import {useState} from "react";
+import {FormListe} from "./components/EinkaufsListe/FormListe";
+import {EinkaufsListe} from "./components/EinkaufsListe/EinkaufsListe";
+import {v4 as V4} from 'uuid'
 
 function App() {
+
+    const [listed, setListed] = useState([])
+    const addNewList = (text) => {
+        const list = {
+            text: text,
+            id: V4()
+        }
+        setListed([...listed, list])
+    }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Meine Einkaufsliste</h1>
+        <FormListe addList={addNewList}/>
+        <EinkaufsListe list={listed}/>
     </div>
   );
 }
