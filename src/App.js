@@ -34,7 +34,7 @@ function App() {
     }
   return (
     <div className="App">
-      <h1>Meine Einkaufsliste</h1>
+      <h1>EINKAUFSLISTE</h1>
         <FormListe addList={addNewList}/>
         <EinkaufsListe list={listed} deleteList={deleteList} toggleList={toggleList}/>
     </div>

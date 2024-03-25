@@ -1,5 +1,10 @@
 # Getting Started with Create React App
 
+![Screenshot 2024-03-25 232731.png](..%2F..%2F..%2FPictures%2FScreenshots%2FScreenshot%202024-03-25%20232731.png)
+
+
+![Screenshot 2024-03-25 232812.png](..%2F..%2F..%2FPictures%2FScreenshots%2FScreenshot%202024-03-25%20232812.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
