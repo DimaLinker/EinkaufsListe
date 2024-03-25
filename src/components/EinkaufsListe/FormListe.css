@@ -9,9 +9,6 @@
 .inputForm:hover {
   border: 1px solid grey;
 }
-.inputForm:focus {
-  outline: none;
-}
 .inputForm::placeholder {
   color: grey;
 }

@@ -14,11 +14,15 @@ function App() {
         }
         setListed([...listed, list])
     }
+
+    const deleteList = (id) => {
+        setListed(listed.filter(t => t.id !== id))
+    }
   return (
     <div className="App">
       <h1>Meine Einkaufsliste</h1>
         <FormListe addList={addNewList}/>
-        <EinkaufsListe list={listed}/>
+        <EinkaufsListe list={listed} deleteList={deleteList}/>
     </div>
   );
 }
