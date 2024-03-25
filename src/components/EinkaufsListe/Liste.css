@@ -4,7 +4,6 @@
   align-items: center;
   height: 30px;
   border-radius: 5px;
-  border: 1px solid grey;
   padding-left: 5px;
   padding-right: 5px;
   background: #61dafb;
@@ -12,8 +11,11 @@
   width: 600px;
   margin: 20px auto;
 }
-.liste:hover {
-  border: 1px solid grey;
+
+.completedTodo {
+  background: #61dafb;
+  color: black;
+  text-decoration: line-through;
 }
 
 .deleteIcon {
@@ -22,7 +24,7 @@
   cursor-pointer: pointer;
 }
 .deleteIcon:hover {
-  color: red;
+  color: #ba0000;
   transform: scale(1.2);
 }
 
